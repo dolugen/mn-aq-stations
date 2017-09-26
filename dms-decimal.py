@@ -20,7 +20,7 @@ def main():
     locations = {}
     with open('mn-aq-stations.csv') as f:
         f_csv = csv.DictReader(f)
-        headers = [Station', 'Province/City', 'Sub-province', 'Longitude', 'Latitude']
+        headers = ['Station', 'Province/City', 'Sub-province', 'Longitude', 'Latitude']
         with open('decimal.csv', 'w') as fw:
             fw_csv = csv.writer(fw)
             fw_csv.writerow(headers)
